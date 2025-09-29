@@ -1,66 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victor S Husefest | Home</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-    <div class="page-wrapper">
-        <header class="sticky-header">
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about-me.html">About</a></li>
-                    <li><a href="my-work.html">My Work</a></li>
-                    <li><a href="my-blog.html">Blog</a></li>
-                </ul>
-            </nav>
-        </header>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Victor S Husefest | Home</title>
+        <link rel="stylesheet" href="styles.css">
+        <meta name="description" content="Portfolio and blog of Victor S Husefest. Showcasing projects, thoughts, and ways to connect.">
+    </head>
+    <body>
+        <div class="page-wrapper">
 
-        <main>
-            <h1>Victor S Husefest</h1>
+            <!-- Header / Navigation -->
+            <header class="sticky-header">
+                <nav class="navbar">
+                    <a href="index.html" class="logo">
+                        <img src="media/logo.jpg" alt="Victor S Husefest Logo">
+                    </a>
+                    <ul class="nav-links">
+                        <li><a href="about-me.html">About</a></li>
+                        <li><a href="my-work.html">My Work</a></li>
+                        <li><a href="my-blog.html">Blog</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                    <!-- Search bar -->
+                    <form class="search-bar">
+                        <input type="text" placeholder="Search..." name="search">
+                        <button type="submit">Go</button>
+                    </form>
+                </nav>
+            </header>
 
-            <section class="intro">
-                <p>Hello. I'm a developer who thrives in the open‑source world, working with GitHub to make my programs alive.  
-                I use Arch, btw.</p>
-            </section>
+            <!-- Main Content -->
+            <main>
+                <!-- Hero Section -->
+                <section class="hero">
+                    <img src="media/logo.jpg" alt="Portrait of Victor" class="hero-image">
+                    <h1>Victor S Husefest</h1>
+                    <p>Welcome to my portfolio and blog — where I share my projects, ideas, and stories.</p>
+                </section>
 
-            <section class="blog">
-                <h2>Blog</h2>
-                <p>Here I share thoughts, experiments, and snippets from my journey in tech and beyond. Expect a mix of Linux tips, Hyprland configs, and maybe a sprinkle of Tolkien wisdom.</p>
-                <div class="button-container">
-                    <a href="my-blog.html" class="retro-button">Visit Blog</a>
-                </div>
-                <h2>My Works</h2>
-                <p>I am proud to have created and contributed to:</p>
-                <ul>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
-            </section>
+                <!-- Blog Preview -->
+                <section class="blog-preview">
+                    <h2>Latest Blog Post</h2>
+                    <article class="blog-card">
+                        <h3>Here is a Blog Title</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus atque quos quod officiis deserunt molestiae eveniet eum quia perspiciatis amet.</p>
+                        <a href="my-blog.html" class="btn">Read More</a>
+                    </article>
+                </section>
 
+                <!-- Projects and Contact Preview -->
+                <section class="two-column">
+                    <div class="projects-preview">
+                        <h2>Featured Project</h2>
+                        <div class="project-card">
+                            <h3>Here is a Project</h3>
+                            <a href="my-work.html" class="btn">View Projects</a>
+                        </div>
+                    </div>
+                    <div class="contact-preview">
+                        <h2>Get in Touch</h2>
+                        <p>Interested in working together or just want to say hi?</p>
+                        <a href="contact.html" class="btn">Contact Me</a>
+                    </div>
+                </section>
 
-            <section class="fun-facts">
-                <h2>Fun Facts</h2>
-                <ul>
-                    <li>I can recite the opening lines of the Lord of the Rings prologue from memory.</li>
-                    <li>The Arch Linux motto is "Keep it simple." Ironically, my desktop setup is far from minimal.</li>
-                    <li>My favorite Middle‑earth location is Rivendell, for its blend of wisdom and beauty.</li>
-                </ul>
-            </section>
-        </main>
+                <!-- Image Carousel Placeholder -->
+                <section class="image-carousel">
+                    <h2>Gallery</h2>
+                    <div class="carousel">
+                        <img src="media/sample1.jpg" alt="Project screenshot 1">
+                        <img src="media/sample2.jpg" alt="Project screenshot 2">
+                        <img src="media/sample3.jpg" alt="Project screenshot 3">
+                    </div>
+                </section>
+            </main>
 
-        <footer class="site-footer">
-            <p><a href="https://github.com/GGV7373">My GitHub</a></p>
-        </footer>
-    </div>
-    <script src="script.js"></script>
-</body>
+            <!-- Footer -->
+            <footer>
+                <p>&copy; 2025 Victor S Husefest. All rights reserved.</p>
+                <p><a href="https://github.com/GGV7373">My GitHub</a></p>
+            </footer>
+
+        </div>
+        <script src="script.js"></script>
+    </body>
 </html>
-
-<!-- add reporter and articles for people to see and download -->
-<!-- add no and en language support -->
