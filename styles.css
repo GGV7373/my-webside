@@ -404,3 +404,73 @@ footer {
   border-radius: 8px;
   display: block;
 }
+
+/* =========================
+   Slideshow
+   ========================= */
+.slideshow-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--english-violet);
+}
+
+.slide {
+  display: none;
+  text-align: center;
+}
+
+.slide img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 12px;
+  margin-top: -22px;
+  color: var(--non-photo-blue-2);
+  font-weight: bold;
+  font-size: 24px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  background: rgba(54,33,62,0.4);
+  transition: background 0.2s;
+  z-index: 10;
+}
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+  background: rgba(54,33,62,0.8);
+}
+
+.dots {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.dot {
+  cursor: pointer;
+  height: 12px;
+  width: 12px;
+  margin: 0 4px;
+  background-color: var(--slate-gray);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.3s;
+}
+
+.active, .dot:hover {
+  background-color: var(--non-photo-blue-2);
+}
