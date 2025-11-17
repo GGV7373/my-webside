@@ -474,3 +474,80 @@ footer {
 .active, .dot:hover {
   background-color: var(--non-photo-blue-2);
 }
+
+/* =========================
+   Blog Post Styles
+   ========================= */
+.blog-post {
+  background: rgba(85, 73, 113, 0.5);
+  padding: 1.5rem;
+  margin: 1.5rem 0;
+  border-left: 4px solid var(--non-photo-blue);
+  border-radius: 4px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.blog-post:hover {
+  transform: translateX(5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.blog-post h2 {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+
+.blog-post h2 a {
+  color: var(--non-photo-blue-2);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.blog-post h2 a:hover {
+  color: var(--non-photo-blue);
+}
+
+.blog-date {
+  color: var(--non-photo-blue);
+  font-size: 0.9rem;
+  font-style: italic;
+  margin-bottom: 1rem;
+}
+
+.blog-excerpt {
+  color: var(--slate-gray);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.read-more {
+  display: inline-block;
+  color: var(--non-photo-blue);
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  padding: 0.5rem 0;
+  border-bottom: 2px solid transparent;
+  border-bottom-color: var(--non-photo-blue);
+}
+
+.read-more:hover {
+  color: var(--non-photo-blue-2);
+  border-bottom-color: var(--non-photo-blue-2);
+}
+
+/* =========================
+   All Posts Link
+   ========================= */
+.all-posts-link {
+  text-align: center;
+  margin: 2rem 0;
+  padding: 1rem;
+}
+
+.all-posts-link .btn {
+  background: var(--english-violet);
+  padding: 0.8rem 1.5rem;
+  font-weight: bold;
+  border-radius: 4px;
+}
